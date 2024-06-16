@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pizza Mart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="../static/index.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Pizza Mart</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="listPizza.html">Pizza</a>
+            <a class="nav-item nav-link"href="listUser.html">Users</a>
+            <a class="nav-item nav-link" href="listOrders.html">Orders</a>
+            <div style="margin-left: 1000px">
+                <span>
+                    <a class="nav-item nav-link" href="registerUser.html">Register</a>
+                <a class="nav-item nav-link" href="listPizzaCustomer.html">Pizza</a>
+                </span>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+<br><br>
+<h1 style="text-align: center">Place order1</h1>
+<div style="margin-left: 500px; margin-top: 70px">
+    <form>
+
+
+        <div class="form-group row">
+            <label for="orderDate" class="col-sm-2 col-form-label">Order Date:</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control" id="orderDate" placeholder="orderDate">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="quantity" class="col-sm-2 col-form-label">Quantity:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="quantity" placeholder="quantity">
+            </div>
+        </div>
+
+        <br>
+        <div class="form-group row">
+            <div class="col-sm-10 ">
+                <button type="submit" class="btn btn-primary" style="margin-left: 180px" onclick="addOrder()">Order Now</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+</body>
+</html>
